@@ -26,10 +26,7 @@ def entryTime(s, keypad):
 
     for key, value in keypad_index_ref.items():
         new_key = keypad[key]
-        new_value = [keypad[i] for i in value]  # list comprehension
-        # new_value = []
-        # for i in value:
-        #     new_value.append(i)
+        new_value = [keypad[i] for i in value]  
         keypad_index[new_key] = new_value
 
     output_time = 0
